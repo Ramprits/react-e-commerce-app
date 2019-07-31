@@ -5,11 +5,4 @@ import App from './app'
 import 'bootstrap/dist/css/bootstrap.css';
 import './style.scss';
 
-
-
-
-render(
-  <Router>
-    <App />
-  </Router>
-  , document.getElementById('root'));
+render(<Router><App /></Router>, document.getElementById('root'));
