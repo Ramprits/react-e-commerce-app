@@ -7,7 +7,7 @@ import {
 const ProductItem = ({ name, description, price, createdAt, picture }) => {
   return (
     <React.Fragment>
-      <Card>
+      <Card className="h-50">
         <CardImg top width="100%" src={picture.url} alt={picture.name} />
         <CardBody>
           <CardTitle>{name}</CardTitle>
@@ -15,7 +15,7 @@ const ProductItem = ({ name, description, price, createdAt, picture }) => {
           <CardText>
             {description}
           </CardText>
-          <Button>Detail</Button>
+          <Button size="sm">Detail</Button>
         </CardBody>
       </Card>
     </React.Fragment>
