@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Switch, Route } from "react-router-dom";
 import { Container } from 'reactstrap';
+import { Button } from 'reactstrap';
 import HomePage from './pages/home.component';
 import ContactPage from './pages/contact.component';
 import ProductPage from './pages/product.component';
@@ -9,7 +10,11 @@ import NavbarComponent from './components/navbar/navbar.component';
 class App extends Component {
   constructor() {
     super();
+    this.state = {
+      currentUser: null
+    }
   }
+
   render() {
     return (
       <React.Fragment>
