@@ -7,13 +7,13 @@ import {
 const ProductItem = ({ name, description, price, createdAt, picture }) => {
   return (
     <React.Fragment>
-      <Card className="h-50">
+      <Card className="h-100">
         <CardImg top width="100%" src={picture.url} alt={picture.name} />
         <CardBody>
           <CardTitle>{name}</CardTitle>
-          <CardSubtitle>{price}</CardSubtitle>
+          <CardSubtitle>${price}</CardSubtitle>
           <CardText>
-            {description}
+            {description.substr(0,100)}
           </CardText>
           <Button size="sm">Detail</Button>
         </CardBody>

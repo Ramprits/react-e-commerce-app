@@ -23,7 +23,7 @@ class ProductList extends Component {
       <React.Fragment>
         <Row>
           {this.state.products ? this.state.products.map(({ _id, ...product }) => (
-            <Col className="col-md-4">
+            <Col className="col-md-4 mt-3">
               <ProductItem key={_id} {...product} />
             </Col>
           )) : <Loading loading="Please wait while loading..." />}
